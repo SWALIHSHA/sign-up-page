@@ -1,0 +1,148 @@
+*{
+    background-color: #000000;
+    color: #d5bde6;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'odinfont';
+    src: url('./Norse-Bold.otf');
+}
+
+
+.section h2{
+    background-color: #0d0116;
+}
+
+body > .main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+body > .main > .cover{
+    position: relative;
+    flex-grow: 1;
+    width: max(40vw, 350px);
+    height: 100vh;
+    background-image: url(./images/city.jpg);
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cover .logo-bar{
+    background-color: rgba(0, 0, 0,0.4);
+    margin-top: 30%;
+    width: 100%;
+    font-family: 'odinfont';
+    padding: 0px 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-bar img{
+    width: 5rem;
+    padding: 10px;
+    background-color: rgba(0, 0, 0,0);
+}
+.logo-bar h1{
+    background-color: rgba(0, 0, 0,0);
+    font-size: xxx-large;
+}
+
+body > .main > .section{
+    width: 60vw;
+}
+
+body > .main > .section> .content{
+    font-weight: bold;
+    font-size: x-large;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+}
+
+.second{
+    margin: 20px 0px;
+}
+
+.feild-content{
+    background-color: #0d0116;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-top: 10px;
+
+}
+
+.input-feild{
+    display: grid;
+    gap: 30px;
+    column-gap: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #0d0116;
+
+}
+.input-feild > div{ 
+    position: relative;
+    width: max(10rem, 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0d0116;
+}
+
+.input-feild > div > label{
+    background-color: #0d0116;
+}
+
+.input-feild > div > input{
+    background-color: #ffffff;
+    color: #892CDC;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 5px 10px;
+}
+
+.input-feild > div > input:focus{
+    border: 3px solid #d5bde6;
+    box-shadow: 2px 2px 10px #d5bde6;
+    outline: none;
+}
+.input-feild > div > input:invalid{
+    border: 3px solid red;
+}
+.input-feild > div > input:valid{
+    border:3px solid #892CDC ;
+}
+
+.last{
+    padding: 20px 50px;
+    font-weight: bold;
+}
+
+.last > button{
+    padding: 15px;
+    background-color: #fbfd90;
+    border-radius: 15px;
+    color: #100043;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.last > button:hover{
+    cursor: pointer;
+    background-color: #100043;
+    color: #fbfd90;
+}
+
+.log-in:hover{
+    cursor: pointer;
+    color: #fbfd90;
+}
